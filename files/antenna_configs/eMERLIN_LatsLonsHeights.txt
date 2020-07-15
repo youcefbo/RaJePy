@@ -1,0 +1,25 @@
+import astropy.units as u
+from astropy.coordinates import EarthLocation, Latitude, Longitude
+
+tscp_geod = {"LOV": ("53d14m10.50s", "-02d18m25.74s", 52.48),
+             "MK2": ("53d13m51.62s", "-02d18m34.16s", 52.48),
+             "DEF": ("52d05m27.61s", "-02d08m09.62s", 51.27),
+             "KNO": ("52d47m23.9s", "-02d59m44.9s", 53.92),
+             "PIC": ("53d17m18.4s", "-02d26m38.4s", 52.82),
+             "DAR": ("53d09m21.6s", "-02d32m03.3s", 53.01),
+             "CAM": ("52d10m1.2s", "+0d2m13.4s", 47.47),
+             "GOO": ("50d02m53s", "-05d10m55s", 55.13)}
+
+
+
+tscp_geoc = {}
+for tscp in tscp_geod:
+    geoc = EarthLocation.from_geodetic(Longitude(tscp_geod[tscp][0], unit=u.degree),
+                                       Latitude(tscp_geod[tscp][1], unit=u.degree),
+                                       tscp_geod[tscp][2])
+    tscp_geoc[tscp] = (geoc.x.value, geoc.y.value, geoc.z.value)
+
+for tscp in tscp_geoc:
+    s = "{:+015.6f} {:+015.6f} {:+015.6f}".format(*tscp_geoc[tscp])
+    s += " {} {}".format(76. if tscp == 'LOV' else 25., tscp)
+    print(s)

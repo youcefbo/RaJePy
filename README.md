@@ -1,3 +1,5 @@
+# VaJePy
+
 ### Requirements:
 - numpy (developed with 1.18.1)
 - scipy (developed with 1.3.1)

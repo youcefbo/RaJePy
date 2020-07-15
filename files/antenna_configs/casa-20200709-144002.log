@@ -1,0 +1,497 @@
+2020-07-09 14:40:06	INFO	::casa	
+2020-07-09 14:40:06	INFO	::casa	Checking telemetry submission interval
+2020-07-09 14:40:06	INFO	::casa	Telemetry submit interval not reached. Not submitting data.
+2020-07-09 14:40:06	INFO	::casa	Next telemetry data submission in: 6 days, 6:05:04.057265
+2020-07-09 14:40:06	INFO	::casa	CASA Version PIPELINE 5.6.1-8  
+2020-07-10 15:03:34	INFO	simobserve::::	
+2020-07-10 15:03:34	INFO	simobserve::::+	##########################################
+2020-07-10 15:03:34	INFO	simobserve::::+	##### Begin Task: simobserve         #####
+2020-07-10 15:03:34	INFO	simobserve::::	simobserve(project="testsim_22GHz",skymodel="/Users/simon/Nextcloud/Paper_RadioRT/SavedPipelineResults/TestModel1/Day0/22000MHz/Flux_Day0_22000MHz.fits",inbright="",indirection="",incell="",
+2020-07-10 15:03:34	INFO	simobserve::::+	        incenter="22GHz",inwidth="4GHz",complist="",compwidth="8GHz",comp_nchan=1,
+2020-07-10 15:03:34	INFO	simobserve::::+	        setpointings=False,ptgfile="/Users/simon/Desktop/example_pointings.ptg",integration="10s",direction=[''],mapsize=['', ''],
+2020-07-10 15:03:34	INFO	simobserve::::+	        maptype="hexagonal",pointingspacing="",caldirection="",calflux="1Jy",obsmode="int",
+2020-07-10 15:03:34	INFO	simobserve::::+	        refdate="2014/05/21",hourangle="-1.24135136h",totaltime="7200s",antennalist="vla.b.cfg",sdantlist="aca.tp.cfg",
+2020-07-10 15:03:34	INFO	simobserve::::+	        sdant=0,outframe="LSRK",thermalnoise="tsys-atm",user_pwv=0.5,t_ground=269.0,
+2020-07-10 15:03:34	INFO	simobserve::::+	        t_sky=260.0,tau0=0.1,seed=11111,leakage=0.0,graphics="none",
+2020-07-10 15:03:34	INFO	simobserve::::+	        verbose=False,overwrite=True)
+2020-07-10 15:03:34	INFO	simobserve::FITSCoordinateUtil::fromFITSHeader	passing empty or nonexistant spectral Coordinate axis
+2020-07-10 15:03:34	INFO	simobserve::ImageFactory::createImage	Created Paged image 'testsim_22GHz/testsim_22GHz.vla.b.skymodel' of shape [358, 712, 1, 1] with float valued pixels.
+2020-07-10 15:03:34	INFO	simobserve::ImageFactory::fromImage	Created Paged image 'testsim_22GHz/testsim_22GHz.vla.b.skymodel.flat' of shape [358, 712] with float valued pixels.
+2020-07-10 15:03:34	INFO	simobserve::image::_adddegaxes 	Creating image 'testsim_22GHz/testsim_22GHz.vla.b.skymodel.flat' of shape [358, 712, 1]
+2020-07-10 15:03:34	INFO	simobserve::readantenna::	Reading antenna positions from '/Applications/CASA.app/Contents/data/alma/simmos/vla.b.cfg'
+2020-07-10 15:03:34	INFO	simobserve::readantenna::	Reading antenna positions from '/Applications/CASA.app/Contents/data/alma/simmos/vla.b.cfg'
+2020-07-10 15:03:34	INFO	simobserve::read_pointings::	read in 1 pointing(s) from file
+2020-07-10 15:03:34	INFO	simobserve::simobserve::	center = J2000 06:12:54.02000 +017.59.23.600000
+2020-07-10 15:03:34	INFO	simobserve::simobserve::	preparing empty measurement set
+2020-07-10 15:03:34	INFO	simobserve::simobserve::	You desire an hour angle of -1.24135136 hours
+2020-07-10 15:03:34	INFO	simobserve::NewMSSimulator::initAnt() 	Using global coordinates for the antennas
+2020-07-10 15:03:34	INFO	simobserve::NewMSSimulator::initAnt() 	Added rows to ANTENNA table
+2020-07-10 15:03:34	INFO	simobserve::MSsimulator::initSpWindows() 	Creating new spectral window K, ID 1
+2020-07-10 15:03:34	INFO	simobserve::MSsimulator::initFeeds() 	Added rows to FEED table
+2020-07-10 15:03:34	INFO	simobserve::simulator::settimes()	Times 
+2020-07-10 15:03:34	INFO	simobserve::simulator::settimes()+	     Integration time 10s
+2020-07-10 15:03:34	INFO	simobserve::simulator::settimes()	     Times will be interpreted as hour angles for first source
+2020-07-10 15:03:35	INFO	simobserve::NewMSSimulator::observe()	First source: testsim_22GHz.vla.b_0 @ 06:12:54.02   +17.59.23.60       J2000
+2020-07-10 15:03:35	INFO	simobserve::NewMSSimulator::observe()+	Full time range: 20-May-2014/19:16:04.3 -- 20-May-2014/21:16:04.3 TAI with int = 10
+2020-07-10 15:03:35	INFO	simobserve::NewMSSimulator::observe()	Calculating a total of 720 integrations
+2020-07-10 15:03:41	INFO	simobserve::Simulator::setdata() 	Selecting data
+2020-07-10 15:03:41	INFO	simobserve::Simulator::setdata() 	Performing selection on MeasurementSet
+2020-07-10 15:03:41	INFO	simobserve::Simulator::setdata() 	Selecting on field and spectral window ids
+2020-07-10 15:03:41	INFO	simobserve::Simulator::setdata() 	No selection string given
+2020-07-10 15:03:41	INFO	simobserve::Simulator::setdata() 	Selection did not drop any rows
+2020-07-10 15:03:41	INFO	simobserve::Simulator::setvp()	Setting voltage pattern parameters
+2020-07-10 15:03:41	INFO	simobserve::Simulator::setvp()	Beam Squint will be included in the VP model
+2020-07-10 15:03:41	INFO	simobserve::Simulator::setvp()	and the parallactic angle increment is 360 degrees
+2020-07-10 15:03:41	INFO	simobserve::simutil::	Note: diameters in configuration file will not be used - PB for VLA will be used
+2020-07-10 15:03:41	INFO	simobserve::simobserve::	done setting up observations (blank visibilities)
+2020-07-10 15:03:41	INFO	simobserve::simobserve::	predicting from testsim_22GHz/testsim_22GHz.vla.b.skymodel
+2020-07-10 15:03:41	INFO	simobserve::Simulator::predict() 	Predicting visibilities using model: [testsim_22GHz/testsim_22GHz.vla.b.skymodel] and componentList: 
+2020-07-10 15:03:41	INFO	simobserve::Simulator::predict() 	The data column will be replaced
+2020-07-10 15:03:41	INFO	simobserve::Simulator::createSkyEquation() 	Opening model 0 named testsim_22GHz/testsim_22GHz.vla.b.skymodel
+2020-07-10 15:03:41	INFO	simobserve::Simulator::getVPRecord 	Using Voltage Patterns from the VPManager
+2020-07-10 15:03:41	INFO	simobserve::Simulator::createSkyEquation() 	Synthesis gridding 
+2020-07-10 15:03:41	INFO	simobserve::Simulator::createSkyEquation() 	Fourier transforms will use image centers as tangent points
+2020-07-10 15:03:41	INFO	simobserve::VPSkyJones::VPSkyJones	PB used VLA_K
+2020-07-10 15:03:41	INFO	simobserve::BeamSkyJones::summary	Beam Summary: 
+2020-07-10 15:03:41	INFO	simobserve::BeamSkyJones::summary	Model 1 for VLA ant=-1 feed=-1 uses PB: AIRY
+2020-07-10 15:03:41	INFO	simobserve::PBMath1D::summary	Using AIRY PB Class 
+2020-07-10 15:03:41	INFO	simobserve::PBMathInterface::summary	These parameters are for Voltage Pattern
+2020-07-10 15:03:41	INFO	simobserve::BeamSquint::show	Beam Squint in arcmin (AZ-EL): [1.20337, -0.126479]
+2020-07-10 15:03:41	INFO	simobserve::BeamSquint::show	Beam Squint ref freq, GHz    : 1
+2020-07-10 15:03:41	INFO	simobserve::PBMath1D::summary	Max Radius at 1 GHz: 51.384 arcmin 
+2020-07-10 15:03:41	INFO	simobserve::PBMath1DAiry::summary	   Dish Diameter: 25 m 
+2020-07-10 15:03:41	INFO	simobserve::PBMath1DAiry::summary	Blocked Diameter: 2.36 m 
+2020-07-10 15:03:43	INFO	simobserve::Simulator::reset() 	Resetting all visibility corruption components
+2020-07-10 15:03:43	INFO	simobserve::Simulator::reset() 	Reset all image-plane corruption components
+2020-07-10 15:03:43	INFO	simobserve::simobserve::	generation of measurement set testsim_22GHz/testsim_22GHz.vla.b.ms complete
+2020-07-10 15:03:44	INFO	simobserve::noise::	copying testsim_22GHz/testsim_22GHz.vla.b.ms to testsim_22GHz/testsim_22GHz.vla.b.noisy.ms and adding thermal noise
+2020-07-10 15:03:44	INFO	simobserve::noise::	interpolated receiver temp=110
+2020-07-10 15:03:44	INFO	noise::NewMSSimulator::NewMSSimulator(MeasurementSet& theMS) 	Opening MeasurementSet /Users/simon/Desktop/testsim_22GHz/testsim_22GHz.vla.b.noisy.ms with 252720 rows
+2020-07-10 15:03:44	INFO	noise::NewMSSimulator::NewMSSimulator(MeasurementSet& theMS) 	   last spectral window ID = 1
+2020-07-10 15:03:44	INFO	noise::Simulator::setdata() 	Selecting data
+2020-07-10 15:03:44	INFO	noise::Simulator::setdata() 	Performing selection on MeasurementSet
+2020-07-10 15:03:44	INFO	noise::Simulator::setdata() 	Selecting on spectral window id
+2020-07-10 15:03:44	INFO	noise::Simulator::setdata() 	No selection string given
+2020-07-10 15:03:44	INFO	noise::Simulator::setdata() 	Selection did not drop any rows
+2020-07-10 15:03:44	INFO	noise::Simulator::create_corrupt() 	Creating A NOISE Calibration structure for data corruption.
+2020-07-10 15:03:45	INFO	noise::SVC::sizeUpSim() 	For simint = integration, found 1 solution intervals.
+2020-07-10 15:03:45	INFO	noise::SVC[A Noise]::setSimulate() 	calTable name not set - not writing to disk (note: OTF sim - not creating Calset either)
+2020-07-10 15:03:45	INFO	noise::Simulator::setnoise2() 	adding noise with the sensitivity constant of 1/sqrt(2)
+2020-07-10 15:03:45	INFO	noise::Simulator::setnoise2() 	User has not set ground pressure, using 560mb
+2020-07-10 15:03:45	INFO	noise::Simulator::setnoise2() 	User has not set site altitude, using 5000m
+2020-07-10 15:03:45	INFO	noise::Simulator::setnoise2() 	User has not set water scale height, using 2km
+2020-07-10 15:03:45	INFO	noise::Simulator::create_corrupt() 	Creating TF NOISE Calibration structure for data corruption.
+2020-07-10 15:03:45	INFO	noise::SVC::sizeUpSim() 	For simint = integration, found 720 solution intervals.
+2020-07-10 15:03:45	INFO	noise::AtmCorr::initAtm 	Initializing ATM
+2020-07-10 15:03:45	INFO	noise::AtmCorr::initAtm 	altitude=5000m, Pground=560mb, Tground=269K, humidity= 20%, water scale height=2000m
+2020-07-10 15:03:45	INFO	noise::AtmCorr::initAtm 	Spectral window 22(ch 20/40)
+2020-07-10 15:03:45	INFO	noise::AtmCorr::initAtm 	After setting WH2O to 0.5
+2020-07-10 15:03:45	INFO	noise::AtmCorr::initAtm 	Dry and Wet Opacity from RefractiveIndexProfile = 0.00540329, 0.00513368 at 22 GHz (ch0)
+2020-07-10 15:03:45	INFO	noise::AtmCorr::initAtm 	Dry and Wet Opacity from SkyStatus              = 0.00540329, 0.00513368
+2020-07-10 15:03:45	INFO	noise::AtmCorr::initAtm 	Sky plus ground and CMB Brightness Temp across Spw 0, for spill=0.95 Tground=269 pwv=0.5
+2020-07-10 15:03:45	INFO	noise::AtmCorr::initAtm 	 Zenith Tebb[20,22,23.9]=[17.485,18.528,18.0759]
+2020-07-10 15:03:45	INFO	noise::AtmCorr::init(vi,par,type) 	Zenith Tsys at center of first Spectral Window = 129.361 tground=269 spillover=0.95
+2020-07-10 15:03:45	INFO	noise::AtmCorr::init(vi,par,type) 	 pwv=0.5 tau=0.010537(ch0)
+2020-07-10 15:03:45	INFO	noise::SVC[Tf Jones]::setSimulate() 	Calculating corruption terms for simulated Tf Jones: output table=testsim_22GHz/testsim_22GHz.vla.b.noisy.T.cal simint=integration t=0
+2020-07-10 15:03:47	INFO	noise::SVC[Tf Jones]::setSimulate() 	Writing calTable = testsim_22GHz/testsim_22GHz.vla.b.noisy.T.cal (Tf Jones)
+2020-07-10 15:03:47	INFO	noise::::	Writing solutions to table: testsim_22GHz/testsim_22GHz.vla.b.noisy.T.cal
+2020-07-10 15:03:47	INFO	noise::Simulator::corrupt() 	Doing visibility corruption.
+2020-07-10 15:03:47	INFO	noise::Simulator::corrupt() 	simulated A Noise: output table=<none> simint=integration t=0spwok = [1] in correct mode.
+2020-07-10 15:03:47	INFO	noise::Simulator::corrupt() 	simulated Tf Jones: output table=testsim_22GHz/testsim_22GHz.vla.b.noisy.T.cal simint=integration t=0spwok = [1] in corrupt mode.
+2020-07-10 15:03:47	WARN	noise::CTPatchedInterp::interpolate	In caltable testsim_22GHz.vla.b.noisy.T.cal_sim_temp (Tf Jones):
+2020-07-10 15:03:47	WARN	noise::CTPatchedInterp::interpolate+	 Insufficient solution channel sampling (nchan=1) for frequency-dependent LINEAR interpolation 
+2020-07-10 15:03:47	WARN	noise::CTPatchedInterp::interpolate+	 of calibration for MS spw=0; using NEAREST instead.
+2020-07-10 15:03:48	INFO	noise::Simulator::reset() 	Resetting all visibility corruption components
+2020-07-10 15:03:48	INFO	noise::Simulator::reset() 	Reset all image-plane corruption components
+2020-07-10 15:03:48	INFO	simobserve::::	##### End Task: simobserve           #####
+2020-07-10 15:03:48	INFO	simobserve::::+	##########################################
+2020-07-10 15:04:50	INFO	plotms::::	
+2020-07-10 15:04:50	INFO	plotms::::+	##########################################
+2020-07-10 15:04:50	INFO	plotms::::+	##### Begin Task: plotms             #####
+2020-07-10 15:04:50	INFO	plotms::::	plotms(vis="/Users/simon/Desktop/testsim_22GHz/testsim_22GHz.vla.b.ms",gridrows=1,gridcols=1,rowindex=0,colindex=0,
+2020-07-10 15:04:50	INFO	plotms::::+	        plotindex=0,xaxis="amp",xdatacolumn="",xframe="",xinterp="",
+2020-07-10 15:04:50	INFO	plotms::::+	        yaxis="uvwave",ydatacolumn="",yframe="",yinterp="",yaxislocation="",
+2020-07-10 15:04:50	INFO	plotms::::+	        selectdata=True,field="",spw="",timerange="",uvrange="",
+2020-07-10 15:04:50	INFO	plotms::::+	        antenna="",scan="",correlation="",array="",observation="",
+2020-07-10 15:04:50	INFO	plotms::::+	        intent="",feed="",msselect="",averagedata=True,avgchannel="",
+2020-07-10 15:04:50	INFO	plotms::::+	        avgtime="",avgscan=False,avgfield=False,avgbaseline=False,avgantenna=False,
+2020-07-10 15:04:50	INFO	plotms::::+	        avgspw=False,scalar=False,transform=True,freqframe="",restfreq="",
+2020-07-10 15:04:50	INFO	plotms::::+	        veldef="RADIO",shift=[0.0, 0.0],extendflag=False,extcorr=False,extchannel=False,
+2020-07-10 15:04:50	INFO	plotms::::+	        iteraxis="",xselfscale=False,yselfscale=False,xsharedaxis=False,ysharedaxis=False,
+2020-07-10 15:04:50	INFO	plotms::::+	        customsymbol=False,symbolshape="autoscaling",symbolsize=2,symbolcolor="0000ff",symbolfill="fill",
+2020-07-10 15:04:50	INFO	plotms::::+	        symboloutline=False,coloraxis="",customflaggedsymbol=False,flaggedsymbolshape="circle",flaggedsymbolsize=2,
+2020-07-10 15:04:50	INFO	plotms::::+	        flaggedsymbolcolor="ff0000",flaggedsymbolfill="fill",flaggedsymboloutline=False,xconnector="",timeconnector=False,
+2020-07-10 15:04:50	INFO	plotms::::+	        plotrange=[],title="",titlefont=0,xlabel="",xaxisfont=0,
+2020-07-10 15:04:50	INFO	plotms::::+	        ylabel="",yaxisfont=0,showmajorgrid=False,majorwidth=1,majorstyle="",
+2020-07-10 15:04:50	INFO	plotms::::+	        majorcolor="B0B0B0",showminorgrid=False,minorwidth=1,minorstyle="",minorcolor="D0D0D0",
+2020-07-10 15:04:50	INFO	plotms::::+	        showlegend=False,legendposition="",plotfile="",expformat="",verbose=True,
+2020-07-10 15:04:50	INFO	plotms::::+	        exprange="",highres=False,dpi=-1,width=-1,height=-1,
+2020-07-10 15:04:50	INFO	plotms::::+	        overwrite=False,showgui=True,clearplots=True,callib=[''],headeritems="",
+2020-07-10 15:04:50	INFO	plotms::::+	        showatm=False,showtsky=False,showimage=False)
+2020-07-10 15:04:53	INFO	PlotMS::params_changed	Updating: REDRAW, MSDATA, CACHE, AXES, CANVAS, DISPLAY, PAGEHEADER, ITERATION, LOG, PLOTMS_OPTIONS.
+2020-07-10 15:04:53	INFO	PlotMS::load_cache	Clearing the existing plotms cache.
+2020-07-10 15:04:54	INFO	PlotMS::params_changed	Updating: REDRAW, MSDATA, CACHE, AXES, CANVAS, DISPLAY, PAGEHEADER, ITERATION, LOG, PLOTMS_OPTIONS.
+2020-07-10 15:04:54	INFO	PlotMS::load_cache	Clearing the existing plotms cache.
+2020-07-10 15:04:54	INFO	PlotMS::params_changed	Updating: REDRAW, MSDATA, CACHE, AXES, CANVAS, DISPLAY, PAGEHEADER, ITERATION, LOG, PLOTMS_OPTIONS.
+2020-07-10 15:04:54	INFO	PlotMS::load_cache	Clearing the existing plotms cache.
+2020-07-10 15:04:54	INFO	PlotMS::load_cache	START     Current memory usage: 75600 kilobytes.
+2020-07-10 15:04:54	INFO	PlotMS::load_cache	Plotting table testsim_22GHz.vla.b.ms
+2020-07-10 15:04:54	INFO	PlotMS::load_cache	Caching for the new plot: UVwave(29) vs. Amp(17):data...
+2020-07-10 15:04:54	INFO	plotms::::	##### End Task: plotms               #####
+2020-07-10 15:04:54	INFO	plotms::::+	##########################################
+2020-07-10 15:04:54	INFO	PlotMS::load_cache	Loading page header cache
+2020-07-10 15:04:55	INFO	PlotMS::load_cache	Data selection will yield a total of 505440 plottable points (flagged and unflagged).
+2020-07-10 15:04:55	INFO	PlotMS::load_cache+	The plotms cache will require an estimated 0.0081216 GB of memory (16.0684 bytes/point).
+2020-07-10 15:04:55	INFO	PlotMS::load_cache+	This is 0.0484085% of the memory avail. to CASA (16.7772 GB).
+2020-07-10 15:04:55	INFO	PlotMS::load_cache	Loading chunks......
+2020-07-10 15:04:57	INFO	PlotMS::load_cache	Generating the plot mask.
+2020-07-10 15:04:57	INFO	PlotMS::load_cache	refTime = 2014/05/20/00:00:00.0
+2020-07-10 15:04:57	INFO	PlotMS::load_cache	Finished loading.
+2020-07-10 15:04:57	INFO	PlotMS::load_cache	Setting up iteration indexing (if necessary), and calculating plot ranges.
+2020-07-10 15:04:57	INFO	PlotMS::load_cache	Axes ranges:
+2020-07-10 15:04:57	INFO	PlotMS::load_cache+	Amp:data: 0.00160047 to 0.00229201 (unflagged); (no flagged data)
+2020-07-10 15:04:57	INFO	PlotMS::load_cache+	UVwave: 15884.3 to 815954 (unflagged); (no flagged data)
+2020-07-10 15:04:57	INFO	PlotMS::load_cache	Finished indexing.
+2020-07-10 15:04:54	INFO	PlotMS::load_cache	END       Time: +3 seconds.  Memory: +43712 kilobytes.
+2020-07-10 15:04:57	INFO	PlotMS::plot	Plotting 505440 unflagged points.
+2020-07-10 15:05:59	INFO	PlotMS::params_changed	Updating: REDRAW, CACHE.
+2020-07-10 15:05:59	INFO	PlotMS::load_cache	START     Current memory usage: 119312 kilobytes.
+2020-07-10 15:06:00	INFO	PlotMS::load_cache	Plotting table testsim_22GHz.vla.b.ms
+2020-07-10 15:06:00	INFO	PlotMS::load_cache	Caching for the new plot: Amp(17):data vs. Phase(18):data...
+2020-07-10 15:06:00	INFO	PlotMS::load_cache	Loading page header cache
+2020-07-10 15:06:00	INFO	PlotMS::load_cache	Data selection will yield a total of 505440 plottable points (flagged and unflagged).
+2020-07-10 15:06:00	INFO	PlotMS::load_cache+	The plotms cache will require an estimated 0.0101434 GB of memory (20.0684 bytes/point).
+2020-07-10 15:06:00	INFO	PlotMS::load_cache+	This is 0.0604591% of the memory avail. to CASA (16.7772 GB).
+2020-07-10 15:06:00	INFO	PlotMS::load_cache	Loading chunks......
+2020-07-10 15:06:00	INFO	PlotMS::load_cache	Generating the plot mask.
+2020-07-10 15:06:00	INFO	PlotMS::load_cache	refTime = 2014/05/20/00:00:00.0
+2020-07-10 15:06:00	INFO	PlotMS::load_cache	Finished loading.
+2020-07-10 15:06:00	INFO	PlotMS::load_cache	Setting up iteration indexing (if necessary), and calculating plot ranges.
+2020-07-10 15:06:00	INFO	PlotMS::load_cache	Axes ranges:
+2020-07-10 15:06:00	INFO	PlotMS::load_cache+	Phase:data: -0.0108377 to 0.0181052 (unflagged); (no flagged data)
+2020-07-10 15:06:00	INFO	PlotMS::load_cache+	Amp:data: 0.00160047 to 0.00229201 (unflagged); (no flagged data)
+2020-07-10 15:06:00	INFO	PlotMS::load_cache	Finished indexing.
+2020-07-10 15:05:59	INFO	PlotMS::load_cache	END       Time: +1 seconds.  Memory: +8816 kilobytes.
+2020-07-10 15:06:00	INFO	PlotMS::plot	Plotting 505440 unflagged points.
+2020-07-10 15:07:36	INFO	plotms::::	
+2020-07-10 15:07:36	INFO	plotms::::+	##########################################
+2020-07-10 15:07:36	INFO	plotms::::+	##### Begin Task: plotms             #####
+2020-07-10 15:07:36	INFO	plotms::::	plotms(vis="",gridrows=1,gridcols=1,rowindex=0,colindex=0,
+2020-07-10 15:07:36	INFO	plotms::::+	        plotindex=0,xaxis="",xdatacolumn="",xframe="",xinterp="",
+2020-07-10 15:07:36	INFO	plotms::::+	        yaxis="",ydatacolumn="",yframe="",yinterp="",yaxislocation="",
+2020-07-10 15:07:36	INFO	plotms::::+	        selectdata=True,field="",spw="",timerange="",uvrange="",
+2020-07-10 15:07:36	INFO	plotms::::+	        antenna="",scan="",correlation="",array="",observation="",
+2020-07-10 15:07:36	INFO	plotms::::+	        intent="",feed="",msselect="",averagedata=True,avgchannel="",
+2020-07-10 15:07:36	INFO	plotms::::+	        avgtime="",avgscan=False,avgfield=False,avgbaseline=False,avgantenna=False,
+2020-07-10 15:07:36	INFO	plotms::::+	        avgspw=False,scalar=False,transform=False,freqframe="",restfreq="",
+2020-07-10 15:07:36	INFO	plotms::::+	        veldef="RADIO",shift=[0.0, 0.0],extendflag=False,extcorr=False,extchannel=False,
+2020-07-10 15:07:36	INFO	plotms::::+	        iteraxis="",xselfscale=False,yselfscale=False,xsharedaxis=False,ysharedaxis=False,
+2020-07-10 15:07:36	INFO	plotms::::+	        customsymbol=False,symbolshape="autoscaling",symbolsize=2,symbolcolor="0000ff",symbolfill="fill",
+2020-07-10 15:07:36	INFO	plotms::::+	        symboloutline=False,coloraxis="",customflaggedsymbol=False,flaggedsymbolshape="circle",flaggedsymbolsize=2,
+2020-07-10 15:07:36	INFO	plotms::::+	        flaggedsymbolcolor="ff0000",flaggedsymbolfill="fill",flaggedsymboloutline=False,xconnector="",timeconnector=False,
+2020-07-10 15:07:36	INFO	plotms::::+	        plotrange=[],title="",titlefont=0,xlabel="",xaxisfont=0,
+2020-07-10 15:07:36	INFO	plotms::::+	        ylabel="",yaxisfont=0,showmajorgrid=False,majorwidth=1,majorstyle="",
+2020-07-10 15:07:36	INFO	plotms::::+	        majorcolor="B0B0B0",showminorgrid=False,minorwidth=1,minorstyle="",minorcolor="D0D0D0",
+2020-07-10 15:07:36	INFO	plotms::::+	        showlegend=False,legendposition=None,plotfile="",expformat="",verbose=True,
+2020-07-10 15:07:36	INFO	plotms::::+	        exprange="",highres=False,dpi=-1,width=-1,height=-1,
+2020-07-10 15:07:36	INFO	plotms::::+	        overwrite=False,showgui=True,clearplots=True,callib=[''],headeritems="",
+2020-07-10 15:07:36	INFO	plotms::::+	        showatm=False,showtsky=False,showimage=False)
+2020-07-10 15:07:38	INFO	PlotMS::params_changed	Updating: REDRAW, MSDATA, CACHE, AXES, CANVAS, DISPLAY, PAGEHEADER, ITERATION, LOG, PLOTMS_OPTIONS.
+2020-07-10 15:07:38	INFO	PlotMS::load_cache	Clearing the existing plotms cache.
+2020-07-10 15:07:38	INFO	PlotMS::params_changed	Updating: REDRAW, MSDATA, CACHE, AXES, CANVAS, DISPLAY, PAGEHEADER, ITERATION, LOG, PLOTMS_OPTIONS.
+2020-07-10 15:07:38	INFO	PlotMS::load_cache	Clearing the existing plotms cache.
+2020-07-10 15:07:38	INFO	PlotMS::params_changed	Updating: REDRAW, MSDATA, CACHE, AXES, CANVAS, DISPLAY, PAGEHEADER, ITERATION, LOG, PLOTMS_OPTIONS.
+2020-07-10 15:07:38	INFO	PlotMS::load_cache	Clearing the existing plotms cache.
+2020-07-10 15:07:38	INFO	plotms::::	##### End Task: plotms               #####
+2020-07-10 15:07:38	INFO	plotms::::+	##########################################
+2020-07-10 15:07:49	INFO	simobserve::::	
+2020-07-10 15:07:49	INFO	simobserve::::+	##########################################
+2020-07-10 15:07:49	INFO	simobserve::::+	##### Begin Task: simobserve         #####
+2020-07-10 15:07:49	INFO	simobserve::::	simobserve(project="testsim_22GHz",skymodel="/Users/simon/Nextcloud/Paper_RadioRT/SavedPipelineResults/TestModel1/Day0/22000MHz/Flux_Day0_22000MHz.fits",inbright="",indirection="",incell="",
+2020-07-10 15:07:49	INFO	simobserve::::+	        incenter="22GHz",inwidth="4GHz",complist="",compwidth="8GHz",comp_nchan=1,
+2020-07-10 15:07:49	INFO	simobserve::::+	        setpointings=False,ptgfile="/Users/simon/Desktop/example_pointings.ptg",integration="10s",direction=[''],mapsize=['', ''],
+2020-07-10 15:07:49	INFO	simobserve::::+	        maptype="hexagonal",pointingspacing="",caldirection="",calflux="1Jy",obsmode="int",
+2020-07-10 15:07:49	INFO	simobserve::::+	        refdate="2014/05/21",hourangle="-1.24135136h",totaltime="7200s",antennalist="/Users/simon/Nextcloud/PythonLibraries/VaJePy/files/antenna_configs/emerlin.cfg",sdantlist="aca.tp.cfg",
+2020-07-10 15:07:49	INFO	simobserve::::+	        sdant=0,outframe="LSRK",thermalnoise="tsys-atm",user_pwv=0.5,t_ground=269.0,
+2020-07-10 15:07:49	INFO	simobserve::::+	        t_sky=260.0,tau0=0.1,seed=11111,leakage=0.0,graphics="none",
+2020-07-10 15:07:49	INFO	simobserve::::+	        verbose=False,overwrite=True)
+2020-07-10 15:07:49	INFO	simobserve::FITSCoordinateUtil::fromFITSHeader	passing empty or nonexistant spectral Coordinate axis
+2020-07-10 15:07:49	INFO	simobserve::ImageFactory::createImage	Created Paged image 'testsim_22GHz/testsim_22GHz.emerlin.skymodel' of shape [358, 712, 1, 1] with float valued pixels.
+2020-07-10 15:07:50	INFO	simobserve::ImageFactory::fromImage	Created Paged image 'testsim_22GHz/testsim_22GHz.emerlin.skymodel.flat' of shape [358, 712] with float valued pixels.
+2020-07-10 15:07:50	INFO	simobserve::image::_adddegaxes 	Creating image 'testsim_22GHz/testsim_22GHz.emerlin.skymodel.flat' of shape [358, 712, 1]
+2020-07-10 15:07:50	INFO	simobserve::readantenna::	Reading antenna positions from '/Users/simon/Nextcloud/PythonLibraries/VaJePy/files/antenna_configs/emerlin.cfg'
+2020-07-10 15:07:50	INFO	simobserve::readantenna::	Reading antenna positions from '/Users/simon/Nextcloud/PythonLibraries/VaJePy/files/antenna_configs/emerlin.cfg'
+2020-07-10 15:07:50	INFO	simobserve::read_pointings::	read in 1 pointing(s) from file
+2020-07-10 15:07:50	INFO	simobserve::simobserve::	center = J2000 06:12:54.02000 +017.59.23.600000
+2020-07-10 15:07:50	INFO	simobserve::simobserve::	preparing empty measurement set
+2020-07-10 15:07:50	INFO	simobserve::simobserve::	You desire an hour angle of -1.24135136 hours
+2020-07-10 15:07:50	INFO	simobserve::NewMSSimulator::initAnt() 	Using global coordinates for the antennas
+2020-07-10 15:07:50	INFO	simobserve::NewMSSimulator::initAnt() 	Added rows to ANTENNA table
+2020-07-10 15:07:50	INFO	simobserve::MSsimulator::initSpWindows() 	Creating new spectral window K, ID 1
+2020-07-10 15:07:50	INFO	simobserve::MSsimulator::initFeeds() 	Added rows to FEED table
+2020-07-10 15:07:50	INFO	simobserve::simulator::settimes()	Times 
+2020-07-10 15:07:50	INFO	simobserve::simulator::settimes()+	     Integration time 10s
+2020-07-10 15:07:50	INFO	simobserve::simulator::settimes()	     Times will be interpreted as hour angles for first source
+2020-07-10 15:07:50	INFO	simobserve::NewMSSimulator::observe()	First source: testsim_22GHz.emerlin_0 @ 06:12:54.02   +17.59.23.60       J2000
+2020-07-10 15:07:50	INFO	simobserve::NewMSSimulator::observe()+	Full time range: 20-May-2014/12:14:49.3 -- 20-May-2014/14:14:49.3 TAI with int = 10
+2020-07-10 15:07:50	INFO	simobserve::NewMSSimulator::observe()	Calculating a total of 720 integrations
+2020-07-10 15:07:52	INFO	simobserve::Simulator::setdata() 	Selecting data
+2020-07-10 15:07:52	INFO	simobserve::Simulator::setdata() 	Performing selection on MeasurementSet
+2020-07-10 15:07:52	INFO	simobserve::Simulator::setdata() 	Selecting on field and spectral window ids
+2020-07-10 15:07:52	INFO	simobserve::Simulator::setdata() 	No selection string given
+2020-07-10 15:07:52	INFO	simobserve::Simulator::setdata() 	Selection did not drop any rows
+2020-07-10 15:07:52	INFO	simobserve::Simulator::setvp()	Setting voltage pattern parameters
+2020-07-10 15:07:52	INFO	simobserve::Simulator::setvp()	Beam Squint will be included in the VP model
+2020-07-10 15:07:52	INFO	simobserve::Simulator::setvp()	and the parallactic angle increment is 360 degrees
+2020-07-10 15:07:52	INFO	simobserve::simutil::	Note: diameters in configuration file will not be used - PB for MERLIN2 will be used
+2020-07-10 15:07:52	INFO	simobserve::simobserve::	done setting up observations (blank visibilities)
+2020-07-10 15:07:52	INFO	simobserve::simobserve::	predicting from testsim_22GHz/testsim_22GHz.emerlin.skymodel
+2020-07-10 15:07:52	INFO	simobserve::Simulator::predict() 	Predicting visibilities using model: [testsim_22GHz/testsim_22GHz.emerlin.skymodel] and componentList: 
+2020-07-10 15:07:52	INFO	simobserve::Simulator::predict() 	The data column will be replaced
+2020-07-10 15:07:52	INFO	simobserve::Simulator::createSkyEquation() 	Opening model 0 named testsim_22GHz/testsim_22GHz.emerlin.skymodel
+2020-07-10 15:07:52	INFO	simobserve::Simulator::getVPRecord 	Using Voltage Patterns from the VPManager
+2020-07-10 15:07:52	WARN	simobserve::Simulator::getVPRecord (file ../../synthesis/MeasurementEquations/Simulator.cc, line 2212)	vpmanager does not have a beam for MERLIN2.
+2020-07-10 15:07:52	WARN	simobserve::Simulator::getVPRecord (file ../../synthesis/MeasurementEquations/Simulator.cc, line 2212)+	 Please use the vpmanager to define one (and optionally save its state as a table and supply its name via the vptable parameter.)
+2020-07-10 15:07:52	INFO	simobserve::Simulator::createSkyEquation() 	Synthesis gridding 
+2020-07-10 15:07:52	INFO	simobserve::Simulator::createSkyEquation() 	Fourier transforms will use image centers as tangent points
+2020-07-10 15:07:52	SEVERE	simobserve::Simulator::createSkyEquation() (file ../../synthesis/MeasurementEquations/Simulator.cc, line 2260)	Caught exception: RecordInterface: field name is unknown
+2020-07-10 15:07:52	SEVERE	simobserve::Simulator::predict() (file ../../synthesis/MeasurementEquations/Simulator.cc, line 2117)	Failed to create SkyEquation
+2020-07-10 15:07:52	INFO	simobserve::Simulator::reset() 	Resetting all visibility corruption components
+2020-07-10 15:07:52	INFO	simobserve::Simulator::reset() 	Reset all image-plane corruption components
+2020-07-10 15:07:52	INFO	simobserve::simobserve::	generation of measurement set testsim_22GHz/testsim_22GHz.emerlin.ms complete
+2020-07-10 15:07:52	INFO	simobserve::noise::	copying testsim_22GHz/testsim_22GHz.emerlin.ms to testsim_22GHz/testsim_22GHz.emerlin.noisy.ms and adding thermal noise
+2020-07-10 15:07:52	WARN	simobserve::simobserve::	thermal noise only works properly for ALMA/ACA, (E)VLA, and SMA
+2020-07-10 15:07:52	WARN	simobserve::noisetemp::	I don't know about the MERLIN2 receivers, using 200K
+2020-07-10 15:07:52	INFO	simobserve::noise::	interpolated receiver temp=200
+2020-07-10 15:07:52	INFO	noise::NewMSSimulator::NewMSSimulator(MeasurementSet& theMS) 	Opening MeasurementSet /Users/simon/Desktop/testsim_22GHz/testsim_22GHz.emerlin.noisy.ms with 20160 rows
+2020-07-10 15:07:52	INFO	noise::NewMSSimulator::NewMSSimulator(MeasurementSet& theMS) 	   last spectral window ID = 1
+2020-07-10 15:07:52	INFO	noise::Simulator::setdata() 	Selecting data
+2020-07-10 15:07:52	INFO	noise::Simulator::setdata() 	Performing selection on MeasurementSet
+2020-07-10 15:07:52	INFO	noise::Simulator::setdata() 	Selecting on spectral window id
+2020-07-10 15:07:52	INFO	noise::Simulator::setdata() 	No selection string given
+2020-07-10 15:07:52	INFO	noise::Simulator::setdata() 	Selection did not drop any rows
+2020-07-10 15:07:52	INFO	noise::Simulator::create_corrupt() 	Creating A NOISE Calibration structure for data corruption.
+2020-07-10 15:07:52	INFO	noise::SVC::sizeUpSim() 	For simint = integration, found 1 solution intervals.
+2020-07-10 15:07:52	INFO	noise::SVC[A Noise]::setSimulate() 	calTable name not set - not writing to disk (note: OTF sim - not creating Calset either)
+2020-07-10 15:07:52	INFO	noise::Simulator::setnoise2() 	adding noise with the sensitivity constant of 1/sqrt(2)
+2020-07-10 15:07:52	INFO	noise::Simulator::setnoise2() 	User has not set ground pressure, using 560mb
+2020-07-10 15:07:52	INFO	noise::Simulator::setnoise2() 	User has not set site altitude, using 5000m
+2020-07-10 15:07:52	INFO	noise::Simulator::setnoise2() 	User has not set water scale height, using 2km
+2020-07-10 15:07:52	INFO	noise::Simulator::create_corrupt() 	Creating TF NOISE Calibration structure for data corruption.
+2020-07-10 15:07:52	INFO	noise::SVC::sizeUpSim() 	For simint = integration, found 720 solution intervals.
+2020-07-10 15:07:52	INFO	noise::AtmCorr::initAtm 	Initializing ATM
+2020-07-10 15:07:52	INFO	noise::AtmCorr::initAtm 	altitude=5000m, Pground=560mb, Tground=269K, humidity= 20%, water scale height=2000m
+2020-07-10 15:07:52	INFO	noise::AtmCorr::initAtm 	Spectral window 22(ch 20/40)
+2020-07-10 15:07:53	INFO	noise::AtmCorr::initAtm 	After setting WH2O to 0.5
+2020-07-10 15:07:53	INFO	noise::AtmCorr::initAtm 	Dry and Wet Opacity from RefractiveIndexProfile = 0.00540329, 0.00513368 at 22 GHz (ch0)
+2020-07-10 15:07:53	INFO	noise::AtmCorr::initAtm 	Dry and Wet Opacity from SkyStatus              = 0.00540329, 0.00513368
+2020-07-10 15:07:53	INFO	noise::AtmCorr::initAtm 	Sky plus ground and CMB Brightness Temp across Spw 0, for spill=0.95 Tground=269 pwv=0.5
+2020-07-10 15:07:53	INFO	noise::AtmCorr::initAtm 	 Zenith Tebb[20,22,23.9]=[17.485,18.528,18.0759]
+2020-07-10 15:07:53	INFO	noise::AtmCorr::init(vi,par,type) 	Zenith Tsys at center of first Spectral Window = 220.314 tground=269 spillover=0.95
+2020-07-10 15:07:53	INFO	noise::AtmCorr::init(vi,par,type) 	 pwv=0.5 tau=0.010537(ch0)
+2020-07-10 15:07:53	INFO	noise::SVC[Tf Jones]::setSimulate() 	Calculating corruption terms for simulated Tf Jones: output table=testsim_22GHz/testsim_22GHz.emerlin.noisy.T.cal simint=integration t=0
+2020-07-10 15:07:53	INFO	noise::SVC[Tf Jones]::setSimulate() 	Writing calTable = testsim_22GHz/testsim_22GHz.emerlin.noisy.T.cal (Tf Jones)
+2020-07-10 15:07:53	INFO	noise::::	Writing solutions to table: testsim_22GHz/testsim_22GHz.emerlin.noisy.T.cal
+2020-07-10 15:07:53	INFO	noise::Simulator::corrupt() 	Doing visibility corruption.
+2020-07-10 15:07:53	INFO	noise::Simulator::corrupt() 	simulated A Noise: output table=<none> simint=integration t=0spwok = [1] in correct mode.
+2020-07-10 15:07:53	INFO	noise::Simulator::corrupt() 	simulated Tf Jones: output table=testsim_22GHz/testsim_22GHz.emerlin.noisy.T.cal simint=integration t=0spwok = [1] in corrupt mode.
+2020-07-10 15:07:53	WARN	noise::CTPatchedInterp::interpolate	In caltable testsim_22GHz.emerlin.noisy.T.cal_sim_temp (Tf Jones):
+2020-07-10 15:07:53	WARN	noise::CTPatchedInterp::interpolate+	 Insufficient solution channel sampling (nchan=1) for frequency-dependent LINEAR interpolation 
+2020-07-10 15:07:53	WARN	noise::CTPatchedInterp::interpolate+	 of calibration for MS spw=0; using NEAREST instead.
+2020-07-10 15:07:53	INFO	noise::Simulator::reset() 	Resetting all visibility corruption components
+2020-07-10 15:07:53	INFO	noise::Simulator::reset() 	Reset all image-plane corruption components
+2020-07-10 15:07:53	INFO	simobserve::::	##### End Task: simobserve           #####
+2020-07-10 15:07:53	INFO	simobserve::::+	##########################################
+2020-07-10 15:14:15	INFO	simobserve::::	
+2020-07-10 15:14:15	INFO	simobserve::::+	##########################################
+2020-07-10 15:14:15	INFO	simobserve::::+	##### Begin Task: simobserve         #####
+2020-07-10 15:14:15	INFO	simobserve::::	simobserve(project="testsim_22GHz",skymodel="/Users/simon/Nextcloud/Paper_RadioRT/SavedPipelineResults/TestModel1/Day0/22000MHz/Flux_Day0_22000MHz.fits",inbright="",indirection="",incell="",
+2020-07-10 15:14:15	INFO	simobserve::::+	        incenter="22GHz",inwidth="4GHz",complist="",compwidth="8GHz",comp_nchan=1,
+2020-07-10 15:14:15	INFO	simobserve::::+	        setpointings=False,ptgfile="/Users/simon/Desktop/example_pointings.ptg",integration="10s",direction=[''],mapsize=['', ''],
+2020-07-10 15:14:15	INFO	simobserve::::+	        maptype="hexagonal",pointingspacing="",caldirection="",calflux="1Jy",obsmode="int",
+2020-07-10 15:14:15	INFO	simobserve::::+	        refdate="2014/05/21",hourangle="-1.24135136h",totaltime="7200s",antennalist="/Users/simon/Nextcloud/PythonLibraries/VaJePy/files/antenna_configs/emerlin.cfg",sdantlist="aca.tp.cfg",
+2020-07-10 15:14:15	INFO	simobserve::::+	        sdant=0,outframe="LSRK",thermalnoise="tsys-atm",user_pwv=0.5,t_ground=269.0,
+2020-07-10 15:14:15	INFO	simobserve::::+	        t_sky=260.0,tau0=0.1,seed=11111,leakage=0.0,graphics="none",
+2020-07-10 15:14:15	INFO	simobserve::::+	        verbose=False,overwrite=True)
+2020-07-10 15:14:15	INFO	simobserve::FITSCoordinateUtil::fromFITSHeader	passing empty or nonexistant spectral Coordinate axis
+2020-07-10 15:14:15	INFO	simobserve::ImageFactory::createImage	Created Paged image 'testsim_22GHz/testsim_22GHz.emerlin.skymodel' of shape [358, 712, 1, 1] with float valued pixels.
+2020-07-10 15:14:15	INFO	simobserve::ImageFactory::fromImage	Created Paged image 'testsim_22GHz/testsim_22GHz.emerlin.skymodel.flat' of shape [358, 712] with float valued pixels.
+2020-07-10 15:14:15	INFO	simobserve::image::_adddegaxes 	Creating image 'testsim_22GHz/testsim_22GHz.emerlin.skymodel.flat' of shape [358, 712, 1]
+2020-07-10 15:14:15	INFO	simobserve::readantenna::	Reading antenna positions from '/Users/simon/Nextcloud/PythonLibraries/VaJePy/files/antenna_configs/emerlin.cfg'
+2020-07-10 15:14:15	INFO	simobserve::readantenna::	Reading antenna positions from '/Users/simon/Nextcloud/PythonLibraries/VaJePy/files/antenna_configs/emerlin.cfg'
+2020-07-10 15:14:15	INFO	simobserve::read_pointings::	read in 1 pointing(s) from file
+2020-07-10 15:14:15	INFO	simobserve::simobserve::	center = J2000 06:12:54.02000 +017.59.23.600000
+2020-07-10 15:14:15	INFO	simobserve::simobserve::	preparing empty measurement set
+2020-07-10 15:14:15	INFO	simobserve::simobserve::	You desire an hour angle of -1.24135136 hours
+2020-07-10 15:14:15	INFO	simobserve::NewMSSimulator::initAnt() 	Using global coordinates for the antennas
+2020-07-10 15:14:15	INFO	simobserve::NewMSSimulator::initAnt() 	Added rows to ANTENNA table
+2020-07-10 15:14:15	INFO	simobserve::MSsimulator::initSpWindows() 	Creating new spectral window K, ID 1
+2020-07-10 15:14:15	INFO	simobserve::MSsimulator::initFeeds() 	Added rows to FEED table
+2020-07-10 15:14:15	INFO	simobserve::simulator::settimes()	Times 
+2020-07-10 15:14:15	INFO	simobserve::simulator::settimes()+	     Integration time 10s
+2020-07-10 15:14:15	INFO	simobserve::simulator::settimes()	     Times will be interpreted as hour angles for first source
+2020-07-10 15:14:15	INFO	simobserve::NewMSSimulator::observe()	First source: testsim_22GHz.emerlin_0 @ 06:12:54.02   +17.59.23.60       J2000
+2020-07-10 15:14:15	INFO	simobserve::NewMSSimulator::observe()+	Full time range: 20-May-2014/12:14:49.3 -- 20-May-2014/14:14:49.3 TAI with int = 10
+2020-07-10 15:14:15	INFO	simobserve::NewMSSimulator::observe()	Calculating a total of 720 integrations
+2020-07-10 15:14:18	INFO	simobserve::Simulator::setdata() 	Selecting data
+2020-07-10 15:14:18	INFO	simobserve::Simulator::setdata() 	Performing selection on MeasurementSet
+2020-07-10 15:14:18	INFO	simobserve::Simulator::setdata() 	Selecting on field and spectral window ids
+2020-07-10 15:14:18	INFO	simobserve::Simulator::setdata() 	No selection string given
+2020-07-10 15:14:18	INFO	simobserve::Simulator::setdata() 	Selection did not drop any rows
+2020-07-10 15:14:18	INFO	simobserve::Simulator::setvp()	Setting voltage pattern parameters
+2020-07-10 15:14:18	INFO	simobserve::Simulator::setvp()	Beam Squint will be included in the VP model
+2020-07-10 15:14:18	INFO	simobserve::Simulator::setvp()	and the parallactic angle increment is 360 degrees
+2020-07-10 15:14:18	INFO	simobserve::simutil::	Note: diameters in configuration file will not be used - PB for MERLIN2 will be used
+2020-07-10 15:14:18	INFO	simobserve::simobserve::	done setting up observations (blank visibilities)
+2020-07-10 15:14:18	INFO	simobserve::simobserve::	predicting from testsim_22GHz/testsim_22GHz.emerlin.skymodel
+2020-07-10 15:14:18	INFO	simobserve::Simulator::predict() 	Predicting visibilities using model: [testsim_22GHz/testsim_22GHz.emerlin.skymodel] and componentList: 
+2020-07-10 15:14:18	INFO	simobserve::Simulator::predict() 	The data column will be replaced
+2020-07-10 15:14:18	INFO	simobserve::Simulator::createSkyEquation() 	Opening model 0 named testsim_22GHz/testsim_22GHz.emerlin.skymodel
+2020-07-10 15:14:18	INFO	simobserve::Simulator::getVPRecord 	Using Voltage Patterns from the VPManager
+2020-07-10 15:14:18	INFO	simobserve::Simulator::createSkyEquation() 	Synthesis gridding 
+2020-07-10 15:14:18	INFO	simobserve::Simulator::createSkyEquation() 	Fourier transforms will use image centers as tangent points
+2020-07-10 15:14:18	INFO	simobserve::BeamSkyJones::summary	Beam Summary: 
+2020-07-10 15:14:18	INFO	simobserve::BeamSkyJones::summary	Model 1 for MERLIN2 ant=-1 feed=-1 uses PB: GAUSSIAN
+2020-07-10 15:14:18	INFO	simobserve::PBMath1D::summary	Using GAUSSIAN PB Class 
+2020-07-10 15:14:18	INFO	simobserve::PBMathInterface::summary	These parameters are for primary Beam
+2020-07-10 15:14:18	INFO	simobserve::PBMathInterface::summary	No Beam Squint
+2020-07-10 15:14:18	INFO	simobserve::PBMath1D::summary	Max Radius at 1 GHz: 82.44 arcmin 
+2020-07-10 15:14:18	INFO	simobserve::PBMath1DGauss::summary	Gaussian HWHM: 20.61 arcmin
+2020-07-10 15:14:18	INFO	simobserve::Simulator::reset() 	Resetting all visibility corruption components
+2020-07-10 15:14:18	INFO	simobserve::Simulator::reset() 	Reset all image-plane corruption components
+2020-07-10 15:14:18	INFO	simobserve::simobserve::	generation of measurement set testsim_22GHz/testsim_22GHz.emerlin.ms complete
+2020-07-10 15:14:18	INFO	simobserve::noise::	copying testsim_22GHz/testsim_22GHz.emerlin.ms to testsim_22GHz/testsim_22GHz.emerlin.noisy.ms and adding thermal noise
+2020-07-10 15:14:18	WARN	simobserve::simobserve::	thermal noise only works properly for ALMA/ACA, (E)VLA, and SMA
+2020-07-10 15:14:18	WARN	simobserve::noisetemp::	I don't know about the MERLIN2 receivers, using 200K
+2020-07-10 15:14:18	INFO	simobserve::noise::	interpolated receiver temp=200
+2020-07-10 15:14:18	INFO	noise::NewMSSimulator::NewMSSimulator(MeasurementSet& theMS) 	Opening MeasurementSet /Users/simon/Desktop/testsim_22GHz/testsim_22GHz.emerlin.noisy.ms with 20160 rows
+2020-07-10 15:14:18	INFO	noise::NewMSSimulator::NewMSSimulator(MeasurementSet& theMS) 	   last spectral window ID = 1
+2020-07-10 15:14:18	INFO	noise::Simulator::setdata() 	Selecting data
+2020-07-10 15:14:18	INFO	noise::Simulator::setdata() 	Performing selection on MeasurementSet
+2020-07-10 15:14:18	INFO	noise::Simulator::setdata() 	Selecting on spectral window id
+2020-07-10 15:14:18	INFO	noise::Simulator::setdata() 	No selection string given
+2020-07-10 15:14:18	INFO	noise::Simulator::setdata() 	Selection did not drop any rows
+2020-07-10 15:14:18	INFO	noise::Simulator::create_corrupt() 	Creating A NOISE Calibration structure for data corruption.
+2020-07-10 15:14:18	INFO	noise::SVC::sizeUpSim() 	For simint = integration, found 1 solution intervals.
+2020-07-10 15:14:18	INFO	noise::SVC[A Noise]::setSimulate() 	calTable name not set - not writing to disk (note: OTF sim - not creating Calset either)
+2020-07-10 15:14:18	INFO	noise::Simulator::setnoise2() 	adding noise with the sensitivity constant of 1/sqrt(2)
+2020-07-10 15:14:18	INFO	noise::Simulator::setnoise2() 	User has not set ground pressure, using 560mb
+2020-07-10 15:14:18	INFO	noise::Simulator::setnoise2() 	User has not set site altitude, using 5000m
+2020-07-10 15:14:18	INFO	noise::Simulator::setnoise2() 	User has not set water scale height, using 2km
+2020-07-10 15:14:18	INFO	noise::Simulator::create_corrupt() 	Creating TF NOISE Calibration structure for data corruption.
+2020-07-10 15:14:19	INFO	noise::SVC::sizeUpSim() 	For simint = integration, found 720 solution intervals.
+2020-07-10 15:14:19	INFO	noise::AtmCorr::initAtm 	Initializing ATM
+2020-07-10 15:14:19	INFO	noise::AtmCorr::initAtm 	altitude=5000m, Pground=560mb, Tground=269K, humidity= 20%, water scale height=2000m
+2020-07-10 15:14:19	INFO	noise::AtmCorr::initAtm 	Spectral window 22(ch 20/40)
+2020-07-10 15:14:19	INFO	noise::AtmCorr::initAtm 	After setting WH2O to 0.5
+2020-07-10 15:14:19	INFO	noise::AtmCorr::initAtm 	Dry and Wet Opacity from RefractiveIndexProfile = 0.00540329, 0.00513368 at 22 GHz (ch0)
+2020-07-10 15:14:19	INFO	noise::AtmCorr::initAtm 	Dry and Wet Opacity from SkyStatus              = 0.00540329, 0.00513368
+2020-07-10 15:14:19	INFO	noise::AtmCorr::initAtm 	Sky plus ground and CMB Brightness Temp across Spw 0, for spill=0.95 Tground=269 pwv=0.5
+2020-07-10 15:14:19	INFO	noise::AtmCorr::initAtm 	 Zenith Tebb[20,22,23.9]=[17.485,18.528,18.0759]
+2020-07-10 15:14:19	INFO	noise::AtmCorr::init(vi,par,type) 	Zenith Tsys at center of first Spectral Window = 220.314 tground=269 spillover=0.95
+2020-07-10 15:14:19	INFO	noise::AtmCorr::init(vi,par,type) 	 pwv=0.5 tau=0.010537(ch0)
+2020-07-10 15:14:19	INFO	noise::SVC[Tf Jones]::setSimulate() 	Calculating corruption terms for simulated Tf Jones: output table=testsim_22GHz/testsim_22GHz.emerlin.noisy.T.cal simint=integration t=0
+2020-07-10 15:14:19	INFO	noise::SVC[Tf Jones]::setSimulate() 	Writing calTable = testsim_22GHz/testsim_22GHz.emerlin.noisy.T.cal (Tf Jones)
+2020-07-10 15:14:19	INFO	noise::::	Writing solutions to table: testsim_22GHz/testsim_22GHz.emerlin.noisy.T.cal
+2020-07-10 15:14:19	INFO	noise::Simulator::corrupt() 	Doing visibility corruption.
+2020-07-10 15:14:19	INFO	noise::Simulator::corrupt() 	simulated A Noise: output table=<none> simint=integration t=0spwok = [1] in correct mode.
+2020-07-10 15:14:19	INFO	noise::Simulator::corrupt() 	simulated Tf Jones: output table=testsim_22GHz/testsim_22GHz.emerlin.noisy.T.cal simint=integration t=0spwok = [1] in corrupt mode.
+2020-07-10 15:14:19	WARN	noise::CTPatchedInterp::interpolate	In caltable testsim_22GHz.emerlin.noisy.T.cal_sim_temp (Tf Jones):
+2020-07-10 15:14:19	WARN	noise::CTPatchedInterp::interpolate+	 Insufficient solution channel sampling (nchan=1) for frequency-dependent LINEAR interpolation 
+2020-07-10 15:14:19	WARN	noise::CTPatchedInterp::interpolate+	 of calibration for MS spw=0; using NEAREST instead.
+2020-07-10 15:14:19	INFO	noise::Simulator::reset() 	Resetting all visibility corruption components
+2020-07-10 15:14:19	INFO	noise::Simulator::reset() 	Reset all image-plane corruption components
+2020-07-10 15:14:19	INFO	simobserve::::	##### End Task: simobserve           #####
+2020-07-10 15:14:19	INFO	simobserve::::+	##########################################
+2020-07-10 15:14:32	INFO	plotms::::	
+2020-07-10 15:14:32	INFO	plotms::::+	##########################################
+2020-07-10 15:14:32	INFO	plotms::::+	##### Begin Task: plotms             #####
+2020-07-10 15:14:32	INFO	plotms::::	plotms(vis="/Users/simon/Desktop/testsim_22GHz/testsim_22GHz.emerlin.ms",gridrows=1,gridcols=1,rowindex=0,colindex=0,
+2020-07-10 15:14:32	INFO	plotms::::+	        plotindex=0,xaxis="amp",xdatacolumn="",xframe="",xinterp="",
+2020-07-10 15:14:32	INFO	plotms::::+	        yaxis="uvwave",ydatacolumn="",yframe="",yinterp="",yaxislocation="",
+2020-07-10 15:14:32	INFO	plotms::::+	        selectdata=True,field="",spw="",timerange="",uvrange="",
+2020-07-10 15:14:32	INFO	plotms::::+	        antenna="",scan="",correlation="",array="",observation="",
+2020-07-10 15:14:32	INFO	plotms::::+	        intent="",feed="",msselect="",averagedata=True,avgchannel="",
+2020-07-10 15:14:32	INFO	plotms::::+	        avgtime="",avgscan=False,avgfield=False,avgbaseline=False,avgantenna=False,
+2020-07-10 15:14:32	INFO	plotms::::+	        avgspw=False,scalar=False,transform=True,freqframe="",restfreq="",
+2020-07-10 15:14:32	INFO	plotms::::+	        veldef="RADIO",shift=[0.0, 0.0],extendflag=False,extcorr=False,extchannel=False,
+2020-07-10 15:14:32	INFO	plotms::::+	        iteraxis="",xselfscale=False,yselfscale=False,xsharedaxis=False,ysharedaxis=False,
+2020-07-10 15:14:32	INFO	plotms::::+	        customsymbol=False,symbolshape="autoscaling",symbolsize=2,symbolcolor="0000ff",symbolfill="fill",
+2020-07-10 15:14:32	INFO	plotms::::+	        symboloutline=False,coloraxis="",customflaggedsymbol=False,flaggedsymbolshape="circle",flaggedsymbolsize=2,
+2020-07-10 15:14:32	INFO	plotms::::+	        flaggedsymbolcolor="ff0000",flaggedsymbolfill="fill",flaggedsymboloutline=False,xconnector="",timeconnector=False,
+2020-07-10 15:14:32	INFO	plotms::::+	        plotrange=[],title="",titlefont=0,xlabel="",xaxisfont=0,
+2020-07-10 15:14:32	INFO	plotms::::+	        ylabel="",yaxisfont=0,showmajorgrid=False,majorwidth=1,majorstyle="",
+2020-07-10 15:14:32	INFO	plotms::::+	        majorcolor="B0B0B0",showminorgrid=False,minorwidth=1,minorstyle="",minorcolor="D0D0D0",
+2020-07-10 15:14:32	INFO	plotms::::+	        showlegend=False,legendposition="",plotfile="",expformat="",verbose=True,
+2020-07-10 15:14:32	INFO	plotms::::+	        exprange="",highres=False,dpi=-1,width=-1,height=-1,
+2020-07-10 15:14:32	INFO	plotms::::+	        overwrite=False,showgui=True,clearplots=True,callib=[''],headeritems="",
+2020-07-10 15:14:32	INFO	plotms::::+	        showatm=False,showtsky=False,showimage=False)
+2020-07-10 15:14:32	INFO	PlotMS::params_changed	Updating: REDRAW, MSDATA, CACHE, AXES, CANVAS, DISPLAY, PAGEHEADER, ITERATION, LOG, PLOTMS_OPTIONS.
+2020-07-10 15:14:32	INFO	PlotMS::load_cache	Clearing the existing plotms cache.
+2020-07-10 15:14:32	INFO	PlotMS::load_cache	START     Current memory usage: 76300 kilobytes.
+2020-07-10 15:14:32	INFO	PlotMS::load_cache	Plotting table testsim_22GHz.emerlin.ms
+2020-07-10 15:14:32	INFO	PlotMS::load_cache	Caching for the new plot: UVwave(29) vs. Amp(17):data...
+2020-07-10 15:14:32	INFO	plotms::::	##### End Task: plotms               #####
+2020-07-10 15:14:32	INFO	plotms::::+	##########################################
+2020-07-10 15:14:32	INFO	PlotMS::load_cache	Loading page header cache
+2020-07-10 15:14:32	INFO	PlotMS::load_cache	Data selection will yield a total of 40320 plottable points (flagged and unflagged).
+2020-07-10 15:14:32	INFO	PlotMS::load_cache+	The plotms cache will require an estimated 0.00067968 GB of memory (16.8571 bytes/point).
+2020-07-10 15:14:32	INFO	PlotMS::load_cache+	This is 0.00405121% of the memory avail. to CASA (16.7772 GB).
+2020-07-10 15:14:32	INFO	PlotMS::load_cache	Loading chunks......
+2020-07-10 15:14:33	INFO	PlotMS::load_cache	Generating the plot mask.
+2020-07-10 15:14:33	INFO	PlotMS::load_cache	refTime = 2014/05/20/00:00:00.0
+2020-07-10 15:14:33	INFO	PlotMS::load_cache	Finished loading.
+2020-07-10 15:14:33	INFO	PlotMS::load_cache	Setting up iteration indexing (if necessary), and calculating plot ranges.
+2020-07-10 15:14:33	INFO	PlotMS::load_cache	Axes ranges:
+2020-07-10 15:14:33	INFO	PlotMS::load_cache+	Amp:data: 8.07433e-08 to 0.00228639 (unflagged); (no flagged data)
+2020-07-10 15:14:33	INFO	PlotMS::load_cache+	UVwave: 37342.7 to 3.18997e+07 (unflagged); (no flagged data)
+2020-07-10 15:14:33	INFO	PlotMS::load_cache	Finished indexing.
+2020-07-10 15:14:32	INFO	PlotMS::load_cache	END       Time: +1 seconds.  Memory: +16528 kilobytes.
+2020-07-10 15:14:33	INFO	PlotMS::plot	Plotting 40320 unflagged points.
+2020-07-10 15:15:00	INFO	plotms::::	
+2020-07-10 15:15:00	INFO	plotms::::+	##########################################
+2020-07-10 15:15:00	INFO	plotms::::+	##### Begin Task: plotms             #####
+2020-07-10 15:15:00	INFO	plotms::::	plotms(vis="/Users/simon/Desktop/testsim_22GHz/testsim_22GHz.emerlin.ms",gridrows=1,gridcols=1,rowindex=0,colindex=0,
+2020-07-10 15:15:00	INFO	plotms::::+	        plotindex=0,xaxis="phase",xdatacolumn="",xframe="",xinterp="",
+2020-07-10 15:15:00	INFO	plotms::::+	        yaxis="amp",ydatacolumn="",yframe="",yinterp="",yaxislocation="",
+2020-07-10 15:15:00	INFO	plotms::::+	        selectdata=True,field="",spw="",timerange="",uvrange="",
+2020-07-10 15:15:00	INFO	plotms::::+	        antenna="",scan="",correlation="",array="",observation="",
+2020-07-10 15:15:00	INFO	plotms::::+	        intent="",feed="",msselect="",averagedata=True,avgchannel="",
+2020-07-10 15:15:00	INFO	plotms::::+	        avgtime="",avgscan=False,avgfield=False,avgbaseline=False,avgantenna=False,
+2020-07-10 15:15:00	INFO	plotms::::+	        avgspw=False,scalar=False,transform=True,freqframe="",restfreq="",
+2020-07-10 15:15:00	INFO	plotms::::+	        veldef="RADIO",shift=[0.0, 0.0],extendflag=False,extcorr=False,extchannel=False,
+2020-07-10 15:15:00	INFO	plotms::::+	        iteraxis="",xselfscale=False,yselfscale=False,xsharedaxis=False,ysharedaxis=False,
+2020-07-10 15:15:00	INFO	plotms::::+	        customsymbol=False,symbolshape="autoscaling",symbolsize=2,symbolcolor="0000ff",symbolfill="fill",
+2020-07-10 15:15:00	INFO	plotms::::+	        symboloutline=False,coloraxis="",customflaggedsymbol=False,flaggedsymbolshape="circle",flaggedsymbolsize=2,
+2020-07-10 15:15:00	INFO	plotms::::+	        flaggedsymbolcolor="ff0000",flaggedsymbolfill="fill",flaggedsymboloutline=False,xconnector="",timeconnector=False,
+2020-07-10 15:15:00	INFO	plotms::::+	        plotrange=[],title="",titlefont=0,xlabel="",xaxisfont=0,
+2020-07-10 15:15:00	INFO	plotms::::+	        ylabel="",yaxisfont=0,showmajorgrid=False,majorwidth=1,majorstyle="",
+2020-07-10 15:15:00	INFO	plotms::::+	        majorcolor="B0B0B0",showminorgrid=False,minorwidth=1,minorstyle="",minorcolor="D0D0D0",
+2020-07-10 15:15:00	INFO	plotms::::+	        showlegend=False,legendposition="",plotfile="",expformat="",verbose=True,
+2020-07-10 15:15:00	INFO	plotms::::+	        exprange="",highres=False,dpi=-1,width=-1,height=-1,
+2020-07-10 15:15:00	INFO	plotms::::+	        overwrite=False,showgui=True,clearplots=True,callib=[''],headeritems="",
+2020-07-10 15:15:00	INFO	plotms::::+	        showatm=False,showtsky=False,showimage=False)
+2020-07-10 15:15:00	INFO	PlotMS::params_changed	Updating: REDRAW, MSDATA, CACHE, AXES, CANVAS, DISPLAY, PAGEHEADER, ITERATION, LOG, PLOTMS_OPTIONS.
+2020-07-10 15:15:00	INFO	PlotMS::load_cache	Clearing the existing plotms cache.
+2020-07-10 15:15:00	INFO	PlotMS::load_cache	START     Current memory usage: 97012 kilobytes.
+2020-07-10 15:15:00	INFO	PlotMS::load_cache	Plotting table testsim_22GHz.emerlin.ms
+2020-07-10 15:15:00	INFO	PlotMS::load_cache	Caching for the new plot: Amp(17):data vs. Phase(18):data...
+2020-07-10 15:15:00	INFO	plotms::::	##### End Task: plotms               #####
+2020-07-10 15:15:00	INFO	plotms::::+	##########################################
+2020-07-10 15:15:00	INFO	PlotMS::load_cache	Loading page header cache
+2020-07-10 15:15:00	INFO	PlotMS::load_cache	Data selection will yield a total of 40320 plottable points (flagged and unflagged).
+2020-07-10 15:15:00	INFO	PlotMS::load_cache+	The plotms cache will require an estimated 0.00067968 GB of memory (16.8571 bytes/point).
+2020-07-10 15:15:00	INFO	PlotMS::load_cache+	This is 0.00405121% of the memory avail. to CASA (16.7772 GB).
+2020-07-10 15:15:00	INFO	PlotMS::load_cache	Loading chunks......
+2020-07-10 15:15:01	INFO	PlotMS::load_cache	Generating the plot mask.
+2020-07-10 15:15:01	INFO	PlotMS::load_cache	refTime = 2014/05/20/00:00:00.0
+2020-07-10 15:15:01	INFO	PlotMS::load_cache	Finished loading.
+2020-07-10 15:15:01	INFO	PlotMS::load_cache	Setting up iteration indexing (if necessary), and calculating plot ranges.
+2020-07-10 15:15:01	INFO	PlotMS::load_cache	Axes ranges:
+2020-07-10 15:15:01	INFO	PlotMS::load_cache+	Phase:data: -180 to 180 (unflagged); (no flagged data)
+2020-07-10 15:15:01	INFO	PlotMS::load_cache+	Amp:data: 8.07433e-08 to 0.00228639 (unflagged); (no flagged data)
+2020-07-10 15:15:01	INFO	PlotMS::load_cache	Finished indexing.
+2020-07-10 15:15:00	INFO	PlotMS::load_cache	END       Time: +0 seconds.  Memory: +1392 kilobytes.
+2020-07-10 15:15:01	INFO	PlotMS::plot	Plotting 40320 unflagged points.
+2020-07-10 15:38:48	SEVERE	vp::getvp	Antenna name list is empty.
+2020-07-10 15:38:51	SEVERE	vp::getvp	Antenna name list is empty.
