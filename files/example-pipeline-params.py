@@ -1,3 +1,13 @@
+"""
+Example parameter file for the running of a multi-frequency, multi-epoch
+radiative transfer calculation and subsequent synthetic imaging with a variety
+of telescopes/telescope-configurations.
+
+Use would be with a VaJePy.classes.ModelRun class instance e.g.:
+
+pipeline = VaJePy.classes.ModelRun('/full/path/to/example-pipeline-params.py')
+"""
+
 import os
 import numpy as np
 

@@ -1,15 +1,19 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Created on Wed Apr  1 14:07:56 2020
+Defines the following classes:
+- JetModel: Handles all radiative transfer and physical calculations of
+physical jet model grid.
+- ModelRun: Handles all interactions with CASA and execution of a full run
+- Pointing (deprecated)
+- PoitingScheme (deprecated)
 
-@author: simon
+@author: Simon Purser (simonp2207@gmail.com)
 """
 import sys
 import os
 import time
 import pickle
-from typing import Any, Tuple
 
 import numpy as np
 import astropy.units as u

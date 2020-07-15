@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 import numpy as np
-import matplotlib.ticker
 from matplotlib.colors import LogNorm, SymLogNorm
 from matplotlib.ticker import AutoLocator, AutoMinorLocator, FuncFormatter
 from matplotlib.ticker import MultipleLocator, MaxNLocator

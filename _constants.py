@@ -1,5 +1,4 @@
 import scipy.constants as con
-from VaJePy.casa import observatories
 
 AU2CM = con.au * 1e2
 KM2CM = 1E5

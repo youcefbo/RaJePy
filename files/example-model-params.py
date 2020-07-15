@@ -1,4 +1,11 @@
-import os
+"""
+Example parameter file for the production of a physical jet model describing the
+temperature, density, 3-D velocity and ionisation fraction within a 3-D grid.
+
+Use would be with a VaJePy.classes.JetModel class instance e.g.:
+
+jet_model = VaJePy.classes.JetModel('/full/path/to/example-model-params.py')
+"""
 import numpy as np
 import scipy.constants as con
 

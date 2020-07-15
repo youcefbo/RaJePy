@@ -1,5 +1,10 @@
+"""
+Contains any classes responsible for the scripting of casa tasks and pipelines
+which are subsequently executed on the command line using 'casa -c [script]'
+"""
+
 import os
-from . import tasks
+
 
 class Script(object):
     """

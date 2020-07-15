@@ -5,7 +5,7 @@ Created on Wed Jun 17 10:32:29 2020
 
 @author: simon
 """
-import os, sys
+import os
 import numpy as np
 import scipy.constants as con
 import matplotlib.pylab as plt
